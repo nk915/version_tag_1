@@ -12,7 +12,7 @@ ifeq ($(GIT_TAG),)
     LAST_TAG = $(shell git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
     VERSION_SUFFIX = $(if $(IS_RELEASE),m,d)
 #    VERSION_SUFFIX = $(if $(filter main,$(GIT_BRANCH)),m,d)
-    VERSION = $(LAST_TAG)-$(GIT_COMMIT)-$(VERSION_SUFFIX)
+    VERSION = $(LAST_TAG) ($(GIT_COMMIT))$(VERSION_SUFFIX)
 else
-    VERSION = $(GIT_TAG)-$(GIT_COMMIT)
+    VERSION = $(GIT_TAG) ($(GIT_COMMIT))
 endif
