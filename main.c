@@ -6,5 +6,6 @@
 
 int main() {
     printf("Build Version: %s\n", VERSION);
+    printf("Dev Merge");
     return 0;
 }
