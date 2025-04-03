@@ -12,7 +12,7 @@ include make-config.mk
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -DVERSION=\"$(VERSION)\" $(SRC) -o $(TARGET)
+	$(CC) $(CFLAGS) -DVERSION="\"$(VERSION)"\" $(SRC) -o $(TARGET)
 
 clean:
 	rm -f $(TARGET)
