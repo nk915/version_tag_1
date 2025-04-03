@@ -1,0 +1,10 @@
+print:
+	@echo "--> Version $(VERSION)"
+	@echo "GIT TAG: $(GIT_TAG)"
+	@echo "LAST TAG: $(LAST_TAG)"
+	@echo "GIT COMMIT: $(GIT_COMMIT)"
+	@echo "GIT BRANCH: $(GIT_BRANCH)"
+	@echo ""
+	@echo "IS_RELEASE: $(IS_RELEASE)"
+	@echo "VERSION_SUFFIX: $(VERSION_SUFFIX)"
+	@echo "VERSION : $(VERSION)"
